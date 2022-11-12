@@ -21,8 +21,8 @@ LOGIN FUNCTION API CALL (POST REQUEST)
 http://localhost:8000/users/login
 
 {
-  "email": "hayati@gmail.com",
-  "password": "rezhnn"
+  "email": "akhil@gmail.com",
+  "password": "akhilsharma"
 }
 response will be like this
 
@@ -32,7 +32,7 @@ response will be like this
   "last_name": "hayati",
   "password": "$2a$14$UIYjkTfnFnhg4qhIfhtYnuK9qsBQifPKgu/WPZAYBaaN17j0eTQZa",
   "email": "hayati@gmail.com",
-  "phone": "+09054167507",
+  "phone": "+4534545435",
   "token": "eyJc0Bwcm90b25vbWFpbC5jb20iLCJGaXJzdF9OYW1lIjoiam9zZXBoIiwiTGFzdF9OYW1lIjoiaGVybWlzIiwiVWlkIjoiNjE2MTRmNTM5ZjI5YmU5NDJiZDlkZjhlIiwiZXhwIjoxNjMzODUzNjUxfQ.NbcpVtPLJJqRF44OLwoanynoejsjdJb5_v2qB41SmB8",
   "Refresh_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IiIsIkZpcnLCJVaWQiOiIiLCJleHAiOjE2MzQzNzIwNTF9.ocpU8-0gCJsejmCeeEiL8DXhFcZsW7Z3OCN34HgIf2c",
   "created_at": "2022-04-09T08:14:11Z",
@@ -47,10 +47,10 @@ Admin add Product Function (POST REQUEST)
 http://localhost:8000/admin/addproduct
 
 {
-  "product_name": "tshirt x15",
-  "price": 250,
+  "product_name": "Alienware x15",
+  "price": 2500,
   "rating": 10,
-  "image": "tshirt.jpg"
+  "image": "alienware.jpg"
 }
 Response : "Successfully added our Product Admin!!"
 
@@ -63,17 +63,17 @@ Response
 [
   {
     "Product_ID": "6153ff8edef2c3c0a02ae39a",
-    "product_name": "tshirt x15",
-    "price": 250,
+    "product_name": "alienwarex15",
+    "price": 1500,
     "rating": 10,
-    "image": "tshirt.jpg"
+    "image": "alienware.jpg"
   },
   {
     "Product_ID": "616152679f29be942bd9df8f",
-    "product_name": "boot",
+    "product_name": "giner ale",
     "price": 900,
     "rating": 5,
-    "image": "boot.jpg"
+    "image": "gin.jpg"
   },
   {
     "Product_ID": "616152ee9f29be942bd9df90",
@@ -105,11 +105,19 @@ response:
 [
   {
     "Product_ID": "616152fa9f29be942bd9df91",
-    "product_name": "tshirt x15",
+    "product_name": "Alienware x15",
     "price": 1500,
     "rating": 10,
     "image": "1.jpg"
+  },
+  {
+    "Product_ID": "616153039f29be942bd9df92",
+    "product_name": "ginger Ale",
+    "price": 300,
+    "rating": 10,
+    "image": "1.jpg"
   }
+]
 Adding the Products to the Cart (GET REQUEST)
 
 http://localhost:8000/addtocart?id=xxxproduct_idxxx&userID=xxxxxxuser_idxxxxxx
@@ -131,8 +139,8 @@ http://localhost:8000/addadress?id=user_id**\*\***\***\*\***
 The Address array is limited to two values home and work address more than two address is not acceptable
 
 {
-  "house_name": "borj farmanie",
-  "street_name": "farmanie",
+  "house_name": "farmanie tower",
+  "street_name": "farmanie street",
   "city_name": "tehran",
   "pin_code": "332423432"
 }
