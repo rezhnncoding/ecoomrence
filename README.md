@@ -21,8 +21,8 @@ LOGIN FUNCTION API CALL (POST REQUEST)
 http://localhost:8000/users/login
 
 {
-  "email": "akhil@gmail.com",
-  "password": "akhilsharma"
+  "email": "hayati@gmail.com",
+  "password": "rezhnn"
 }
 response will be like this
 
